@@ -19,7 +19,7 @@ Dex = 0
 Str = 0
 Mag = 0
 Def = 0
-Vit = 0
+Spr = 0
 
 def ranged_attack(dex, ranged_atk, tgt_def):
     damage = ranged_atk * (dex / 100)
@@ -36,3 +36,5 @@ def melee_attack(strength, melee_atk, tgt_def):
         return round(hit, 2)
     else:
         return "miss"
+
+
