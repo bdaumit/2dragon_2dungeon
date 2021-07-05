@@ -30,7 +30,7 @@ def ranged_attack(dex, ranged_atk, tgt_def):
         return "miss"
     
 def melee_attack(strength, melee_atk, tgt_def):
-    damage = melee_atk * (strenth / 100)
+    damage = melee_atk * (strength / 100)
     hit = damage - tgt_def
     if hit > 0:
         return round(hit, 2)
