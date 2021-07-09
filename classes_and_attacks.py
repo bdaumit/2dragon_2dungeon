@@ -37,4 +37,10 @@ def melee_attack(strength, melee_atk, tgt_def):
     else:
         return "miss"
 
-print("this is a branch test")
+def magic_attack(magic, spell, tgt_spr):
+    damage = spell * (magic / 100)
+    hit = damage - tgt_spr
+    if hit > 0:
+        return round(hit, 2)
+    else:
+        return "miss"
